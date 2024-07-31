@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: url("img5.jpg");
+            background-size: cover;
+        }
+        #outer{
+            height: 500px;
+            width: 400px;
+            margin: 0px auto;
+            margin-top: 50px;
+            background-color: rgb(1, 0, 0,0.5);
+            padding: 60px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            transition: all 1s;
+        }
+        #outer:hover{
+            box-shadow:0px 0px 10px 10px rgba(1, 1, 1, 0.7),0px 0px 10px 20px rgba(1, 1, 1, 0.3) ;
+            transition: all 1s;
+        }
+        .txt{
+            height: 40px;
+            width: 100%;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 1px solid black;
+            
+
+        }
+        .btn{
+            height: 40px;
+            width: 100%;
+            border: none;
+            color: white;
+            background-color: red;
+            border-radius:50px ;
+            transition: all 1s;
+            
+        }
+        .btn:hover{
+            color: rgb(233, 233, 240);
+            background-color: blue;
+            transform: scale(0.8);
+            transition: all 1s;
+            
+        }
+        label{
+            color: white;
+            padding-bottom:5px ;
+            box-sizing: border-box;
+    
+        }
+        input{
+            background:transparent;
+            border-bottom: 1px solid black;
+        }
+        ::placeholder{
+            color: hwb(0 88% 7%);
+            padding-left: 4px;
+        }
+        a{
+            text-decoration: none;
+            color: bisque;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <center style="color: #a384db; font-size: 40px;font-weight: bold;">Log In </center>
+ <label>Email</label><br><input type="email" placeholder="Enter your email.." class="txt"><br>
+<label for="">Password</label><br><input type="password" placeholder="Enter your password"class="txt"><br>
+<label style="color: white;">Security Question</label><br><select class="txt">
+    <option value="" disabled selected>Select</option>
+    <option>Favourite person name</option>
+    <option>Your favourite god</option>
+    <option> Your First Teacher</option>
+</select>
+<br>
+<label for="">Enter your ans..</label><br><input type="text" placeholder="Enter your ans"class="txt"><br>
+<input type="submit" name="SignIn" value="Sign In" id=""class="btn"><br><br>
+<a href="# ">Forget password</a>
+    </div>
+</body>
+</html>
